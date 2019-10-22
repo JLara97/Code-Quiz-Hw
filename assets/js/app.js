@@ -13,26 +13,23 @@ var questions =
     [
         {
             question: "What does HTML stand for?",
-            imgSrc: "img/html.png",
-            choiceA: "Correct",
-            choiceB: "Wrong",
-            choiceC: "Wrong",
+            choiceA: "Hyper Text Markeup Language",
+            choiceB: "Hype Test Matter Llama",
+            choiceC: "Help There's My Leg",
             correct: "A"
         },
         {
             question: "What does CSS stand for?",
-            imgSrc: "img/css.png",
-            choiceA: "Wrong",
-            choiceB: "Correct",
-            choiceC: "Wrong",
+            choiceA: "Canned Sea Salt",
+            choiceB: "Cascading Style Sheets",
+            choiceC: "Cascading Styled Sheeps",
             correct: "B"
         },
         {
             question: "What does JS stand for?",
-            imgSrc: "img/js.png",
-            choiceA: "Wrong",
-            choiceB: "Wrong",
-            choiceC: "Correct",
+            choiceA: "JambaShip",
+            choiceB: "JuiceShop",
+            choiceC: "JavaScript",
             correct: "C"
         }
     ];
@@ -50,7 +47,6 @@ function renderQuestion() {
     var q = questions[runningQuestion];
 
     question.innerHTML = "<p>" + q.question + "</p>";
-    qImg.innerHTML = "<img src=" + q.imgSrc + ">";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
